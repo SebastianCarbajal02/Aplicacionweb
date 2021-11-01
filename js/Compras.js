@@ -54,7 +54,7 @@ function Operaciones(){
         document.getElementById("Subtotal").innerHTML = ("Descuento: "+descuento);
         document.getElementById("Total").innerHTML = ("Total: " + total);
     }
-    else if(compra>1000&&compra<2500){
+    else if(compra<2500){
         descuento =compra* 0.15;
         pagar = compra - descuento;
         total+=pagar;
@@ -62,7 +62,7 @@ function Operaciones(){
         document.getElementById("Subtotal").innerHTML = ("Descuento: " + descuento);
         document.getElementById("Total").innerHTML = ("Total: " + total);
     }
-    else if(compra>2500&&compra<4000){
+    else if(compra<4000){
         descuento = compra * 0.3;
         pagar= compra - descuento;
         total+=pagar;
@@ -70,10 +70,10 @@ function Operaciones(){
         document.getElementById("Subtotal").innerHTML = ("Descuento: " + descuento);
         document.getElementById("Total").innersHTML = ("Total: " + total);
     }
-    else if(compra>4000){
-         descuento = compra * 0.50;
-         pagar = compra - descuento;
-         total+=pagar;
+    else if(compra>=4000){
+        descuento = compra * 0.50;
+        pagar = compra - descuento;
+        total+=pagar;
         document.getElementById("Precio").innerHTML = ("Precio de compra: " + compra);
         document.getElementById("Subtotal").innerHTML = ("Descuento: " + descuento);
         document.getElementById("Total").innerHTML = ("Total: " + total);
