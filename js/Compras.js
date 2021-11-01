@@ -49,7 +49,8 @@ function Operaciones(){
     
    if(compra<1000){
        descuento=0;
-       total=compra; 
+       pagar=compra;
+       total+=pagar; 
         document.getElementById("Precio").innerHTML = ("Precio: " + compra);
         document.getElementById("Subtotal").innerHTML = ("Descuento: "+descuento);
         document.getElementById("Total").innerHTML = ("Total: " + total);
