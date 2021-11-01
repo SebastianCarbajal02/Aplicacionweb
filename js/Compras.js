@@ -69,7 +69,7 @@ function Operaciones(){
         total+=pagar;
         document.getElementById("Precio").innerHTML = ("Precio de compra: " + compra);
         document.getElementById("Subtotal").innerHTML = ("Descuento: " + descuento);
-        document.getElementById("Total").innersHTML = ("Total: " + total);
+        document.getElementById("Total").innerHTML = ("Total: " + total);
     }
     else if(compra>=4000){
         descuento = compra * 0.50;
