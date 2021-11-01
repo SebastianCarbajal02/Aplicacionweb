@@ -1,0 +1,53 @@
+
+
+main{
+	display: flex;
+
+}
+
+body{
+    background-color:blanchedalmond;
+}
+h1{
+    text-align: center;
+}
+h2{
+	font-size: 20pxs;
+	text-align: center;
+}
+
+section {
+	width: 80%;
+	margin: auto;
+	padding: 5px;
+	display: flex;
+
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color:white;
+}
+section figure {
+	width: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+section figure img {
+	width: 70%;
+	margin: 10px auto;
+	display: block;
+	border-radius: 10px solid black;
+	
+}
+section figure figcaption {
+	margin: 10px;
+	text-align: center;
+}
+.Compras{
+	display: flex;
+
+}
+p{
+	text-align: center;
+	font-size: 20px;
+}

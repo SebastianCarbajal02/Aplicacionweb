@@ -1,0 +1,65 @@
+/*Aplicamos estilo a nuestro Body y a todas las etiquetas (input,select,
+textarea, cuyo atributo class sea igual a body */
+body, .default {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*height: 100vh;*/
+	background: #F0F0F0;
+	line-height: 1.6em;/*Permite ampliar y separar cada elemento del Formulario. Se le conoce como
+						Interlineado*/
+	font-size: 12px;/*Tamaño de letra*/
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";/*Familia de letra. Nuestro
+				navegador aplicará la primera fuente de la lista que esté instalada en nuestra
+				computadora. Es conveniente incluir en último lugar una de las fuentes genéricas, 
+				(Sans-Serif) por si acaso el resto de fuentes no estuvieran disponibles */
+}
+
+form {
+	background: white;
+	box-shadow: 10px 10px 20px #ddd;
+}
+
+/*Estilo que se aplicarà a la tabla <table> */
+#enfasis-columna {
+	margin: 45px;/*Sirve para establece un espacio superior, inferior, derecha e izquierda
+				del elemento (body) */
+	width: 480px;/*Ancho de la tabla */
+	border-collapse: collapse; /*Permite configurar que no exista espacio entre los reglones
+							y las columnas de la tabla */
+}
+
+/*Estilo que se aplicará al título que se encuentra dentro de la tabla */
+#enfasis-columna caption {
+	font-size: 20px;/*Tamaño de letra*/
+	margin-bottom: 15px;/*Espacio inferior de un elemento*/
+}
+
+/*Estilo que se aplicará al contenido de cada <td> */
+#enfasis-columna td {
+	padding: 10px 15px;/*Espacio superior e inferior de 10 pixeles y 15 de izquierda a 
+						derecha de cada <td> de la tabla*/
+	color: black; /*Color hexadecimal de la letra de Usuario, Contraseña, etc*/
+	border-top: 1px solid #e8edff; /*Línea horizontal superior, de tipo sólida, de color
+				morado*/
+}
+
+/*Estilo que se aplicará a los <td>, que tengan como atributo class="columna" */
+#enfasis-columna .columna {
+	color: white;
+	background: steelblue;/*Color de fondo*/
+	border-right: 10px solid transparent; /*Línea vertical derecha, de tipo sólida
+				transparente*/
+	border-left: 10px solid transparent; /*Línea vertical izquierda, de tipo sólida
+				transparente*/
+}
+
+/*Estilo que se aplicará a los <tr> y <td>, cuando coloque el cursor del mouse por cada
+una de estas */
+#enfasis-columna tr:hover td {
+	color: #339;/*Color que adoptará el texto (Usuario, Contraseña, Desarrollo Web, etc)
+			cuando pase el cursor del mouse sobre estos*/
+	background: #eff2ff;/*Color de fondo que aparecerá cuando pase el cursor del mouse
+					por cada fila*/
+}
+
